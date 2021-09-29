@@ -14,8 +14,8 @@ let hasReadButton;
 hasReadId.checked = false;
 let mySaved = [];
 let n = 0;
-mySaved.push(localStorage.getItem("book"))
-mySaved = JSON.parse(mySaved)
+// mySaved.push(localStorage.getItem("book"))
+// mySaved = JSON.parse(mySaved)
  
   // localToOnlineStorage();
 
