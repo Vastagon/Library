@@ -1,0 +1,104 @@
+h1{
+    text-align: center;
+}
+:root{
+    background-color: #9999FF;
+    z-index: 0;
+} 
+#createNewBook{
+    width: 20%;
+    height: 10%;
+    padding: 10px;
+    margin-left: 40%;
+}
+.removeButton, .hasReadButton{
+    width: 40%;
+    padding: 10px 5px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.hasReadButton{
+    margin-left: 15%;
+}
+.hidden{
+    display: none;
+}
+#bookInput{
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    width: 15%;
+    top: 25%;
+    left: 41.5%;
+    border-radius: 10px;
+    background-color: aqua;
+    padding: 15px;
+    z-index: 10;
+}
+.individualBook{
+    overflow-x: wrap;
+    width: auto;
+    background-color: brown;
+    margin-right: 1em;
+    margin-top: 1em;
+    border-radius: 10px;
+    padding: 0 20px;
+    padding-bottom: 1em;
+}
+.textInput{
+    width: 80%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    margin-left: 1em;
+}
+.submit{
+    width:40%;
+    padding: 10px;
+    margin-left: 50%;
+}
+#hasRead{
+    display: inline-block;
+    margin-left: 1.3em;
+}
+.bookContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+@media screen and (max-width:800px) {
+    #createNewBook{
+        width: 60%;
+        height: 10%;
+        padding: 10px;
+        margin-left: 20%;
+    }
+    .removeButton, .hasReadButton{
+        width: 40%;
+        padding: 10px 5px;
+    }
+    #bookInput{
+        margin-left: 10%;
+        width: 70%;
+        top: 30%;
+        left: 0;
+        border-radius: 10px;
+        background-color: aqua;
+        padding: 15px;
+        z-index: 10;
+    }
+    .bookContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        margin: auto 0;
+    }
+    .individualBook{
+        margin-right: 0;
+        border-radius: 10px;
+        padding: 0 20px;
+        padding-bottom: 1em;
+    }
+}
