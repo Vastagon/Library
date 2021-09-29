@@ -14,22 +14,22 @@ let hasReadButton;
 hasReadId.checked = false;
 let mySaved = [];
 let n = 0;
-// mySaved.push(localStorage.getItem("book"))
-// mySaved = JSON.parse(mySaved)
+mySaved.push(localStorage.getItem("book"))
+mySaved = JSON.parse(mySaved)
  
-  // localToOnlineStorage();
+  localToOnlineStorage();
 
 
 
-  // function localToOnlineStorage(){
+  function localToOnlineStorage(){
 
-  //   console.log(mySaved)
+    console.log(mySaved)
 
-  //   let newBook = new book(bookNameId.value, authorId.value, numberOfPagesId.value, hasReadId.value)
-  //   myLibrary.push(newBook)//Adds a new book object to to myLibrary   
+    let newBook = new book(bookNameId.value, authorId.value, numberOfPagesId.value, hasReadId.value)
+    myLibrary.push(newBook)//Adds a new book object to to myLibrary   
     
-  //   addBookToLibrary();
-  // }
+    addBookToLibrary();
+  }
 
 hasReadId.addEventListener('click', function(){
   if(isChecked){
@@ -139,15 +139,15 @@ function addBookToLibrary() {//Adds book to the page
     //I think I do storage here
     //localStorage.clear()
 
-  //   mySaved.push([//Adds to json file
-  //     {
-  //         "title": myLibrary[i].title,
-  //         "author": myLibrary[i].author,
-  //         "pageNumber":myLibrary[i].pageNumber,
-  //         "hasRead":myLibrary[i].hasRead.textContent
-  //     }
-  // ])
-      //localStorage.setItem("book",JSON.stringify(mySaved))
+    mySaved.push([//Adds to json file
+      {
+          "title": myLibrary[i].title,
+          "author": myLibrary[i].author,
+          "pageNumber":myLibrary[i].pageNumber,
+          "hasRead":myLibrary[i].hasRead.textContent
+      }
+  ])
+      localStorage.setItem("book",JSON.stringify(mySaved))
     i++;
 }
 
