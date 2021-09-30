@@ -148,7 +148,6 @@ function addBookToLibrary() {//Adds book to the page
     //Remove Button
     removeButton.addEventListener('click', function(){
       this.parentElement.style.display = "none";
-      localStorage.removeItem(i);
     })
 
     //Read Button
@@ -162,8 +161,8 @@ function addBookToLibrary() {//Adds book to the page
       }
     })
 
-      localStorage.setItem(i,JSON.stringify(mySaved))
-      localStorage.setItem("amount", i);
+      // localStorage.setItem(i,JSON.stringify(mySaved))
+      // localStorage.setItem("amount", i);
     i++;
 }
 
