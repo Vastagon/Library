@@ -18,16 +18,16 @@ let amount;
 let finished = false;
 
 
-if(localStorage.getItem(amount) == null || localStorage.getItem(amount) == 0){
-  amount = 1;
-}else{
-  amount = localStorage.getItem(amount);
-}
-while(i < amount && !finished){
-  mySaved.push(localStorage.getItem(i))
-  i++;
-}
-i = 0;
+// if(localStorage.getItem(amount) == null || localStorage.getItem(amount) == 0){
+//   amount = 1;
+// }else{
+//   amount = localStorage.getItem(amount);
+// }
+// while(i < amount && !finished){
+//   mySaved.push(localStorage.getItem(i))
+//   i++;
+// }
+// i = 0;
  
   localToOnlineStorage();
 
@@ -108,20 +108,20 @@ function addBookToLibrary() {//Adds book to the page
     removeButton = document.createElement('button')
     removeButton.className = "removeButton"
     removeButton.innerText = "Remove"
-    if(!finished){
+    //if(!finished){
       let e = 0;
       console.log(myLibrary.length)
-      while(e < myLibrary.length){
+      //while(e < myLibrary.length){
       name.innerText ="Name: "+ myLibrary[e].title;
       author.innerText ="Author: "+ myLibrary[e].author;
       numberofPages.innerText ="Pages: "+ myLibrary[e].pageNumber;
         e++;
-      }
-    }else{
+      //}
+    // }else{
       name.innerText ="Name: "+ myLibrary[i].title;
       author.innerText ="Author: "+ myLibrary[i].author;
       numberofPages.innerText ="Pages: "+ myLibrary[i].pageNumber;
-    }
+    //}
     
 
     function hasReadisChecked(){
